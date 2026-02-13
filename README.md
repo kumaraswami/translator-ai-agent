@@ -69,3 +69,13 @@ The app uses the **Experimental Gemini 2.0 Flash** model by default for speed, b
 *   **Styling**: Tailwind CSS
 *   **AI Model**: Gemini 2.0 Flash / 1.5 Flash / 1.5 Pro
 *   **APIs**: Google Generative AI SDK, Web Speech API
+
+---
+
+## 🛑 Stopping the Agent
+- **Manual Stop**: Press `Ctrl + C` in your terminal.
+- **Docker Stop**: Run `docker-compose down`.
+- **Port Cleanup**: If port `5173` or `8080` is stuck, run:
+  ```bash
+  lsof -ti:5173,8080 | xargs kill -9
+  ```
