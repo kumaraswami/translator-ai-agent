@@ -123,16 +123,13 @@ export const Translator = () => {
                 <div className="absolute top-16 right-6 z-50 bg-black/90 backdrop-blur-md p-4 rounded-lg border border-white/10 w-80 shadow-2xl">
                     <h3 className="text-sm font-bold text-gray-400 mb-2 uppercase tracking-wider">Configuration</h3>
                     <div className="mb-3">
-                        <label className="text-xs text-gray-500 mb-1 block">API Key</label>
-                        <input type="password" value={apiKey} onChange={(e) => setApiKey(e.target.value)} className="w-full bg-white/5 border border-white/20 rounded px-2 py-1 text-xs focus:outline-none focus:border-cyan-400" />
-                    </div>
-                    <div className="mb-3">
                         <label className="text-xs text-gray-500 mb-1 block">Model Name</label>
+
                         <input type="text" value={modelName} onChange={(e) => setModelName(e.target.value)} className="w-full bg-white/5 border border-white/20 rounded px-2 py-1 text-xs focus:outline-none focus:border-cyan-400" />
                         <div className="flex gap-2 mt-1 flex-wrap">
-                            <button onClick={() => setModelName('gemini-2.0-flash-exp')} className="text-[10px] bg-white/10 px-2 rounded hover:bg-white/20">2.0 Flash (Exp)</button>
+                            <button onClick={() => setModelName('gemini-2.0-flash')} className="text-[10px] bg-white/10 px-2 rounded hover:bg-white/20">2.0 Flash</button>
                         </div>
-                        <p className="text-[10px] text-gray-500 mt-2">* Live Mode requires gemini-2.0-flash-exp</p>
+                        <p className="text-[10px] text-gray-500 mt-2">* Live Mode uses gemini-2.0-flash</p>
                     </div>
                 </div>
             )}

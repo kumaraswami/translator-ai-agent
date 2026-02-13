@@ -2,6 +2,29 @@
 
 A real-time, voice-to-voice translation agent built with **React**, **Google Gemini AI**, and the **Web Speech API**. It listens to your voice, translates it contextually using a Large Language Model (LLM), and speaks the result back to you.
 
+## 🐳 Docker Support
+
+You can run the Translator Agent in a containerized environment using Docker.
+
+### 1. Configure Environment
+Ensure you have a `.env` file in the root directory with your API key:
+```env
+VITE_GEMINI_API_KEY=your_gemini_api_key_here
+```
+
+### 2. Build and Run
+Use Docker Compose to build and start the application:
+```bash
+docker-compose up --build
+```
+
+The application will be available at [http://localhost:8080](http://localhost:8080).
+
+### Why Docker?
+- **Consistent Environment**: Runs the same way on any machine.
+- **Security**: Your API key is managed via environment variables and never entered in the UI.
+- **Isolation**: No need to install Node.js locally after the initial setup.
+
 ## 🚀 Quick Start
 
 1.  **Install Dependencies**

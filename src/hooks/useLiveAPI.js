@@ -4,7 +4,7 @@ import { AudioStreamPlayer } from '../utils/audio-player';
 
 const HOST = 'generativelanguage.googleapis.com';
 const VERSION = 'v1alpha';
-const MODEL = 'models/gemini-2.0-flash-exp'; // Only 2.0 supports Live API
+const MODEL = 'models/gemini-2.0-flash'; // Updated from exp
 
 export const useLiveAPI = ({ apiKey }) => {
     const [isConnected, setIsConnected] = useState(false);
